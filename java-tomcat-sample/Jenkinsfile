@@ -8,7 +8,7 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
-                    archiveArtifacts artifacts: 'java-tomcat-sample/*.war'
+                    archiveArtifacts artifacts: '**/*.war'
 					echo "Now Archived the Artifacts...."
                 }
             }
